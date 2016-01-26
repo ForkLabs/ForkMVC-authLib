@@ -11,3 +11,10 @@ MemberBox consists of a ForkMVC Model, ForkMVC Controller, and a few memberBox S
 
 # Configuring the Database
 Upload the included "memberBox_authLib.sql" file to your phpMyAdmin's "import" screen. This will have everything you need for Authentication. If you don't know how to import a database table file, you should Google that.
+
+# On The Front End
+You need jQuery and the /assets/js/auth.js included inside of your login page at the very least. I reccommend including this on all pages though.
+
+`<script src="http://forklabs.us/cdn/jquery/jquery.js"></script>`
+`<script src="/assets/js/auth.js"></script>`
+
