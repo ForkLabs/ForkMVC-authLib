@@ -9,6 +9,12 @@ MemberBox consists of a ForkMVC Model, ForkMVC Controller, and a few memberBox S
 3. Change it to `$autoLoad_array = array('authlib,`
 4. Save File.
 
+# Use the Library
+1. You must use it as a model. We can create a global model by doing the following.
+2. Open: ForkBox/system/core/model.php
+3. find public function model() {
+4. Change it to: `public function model() { $this->auth = new Auth();` 
+
 # Configuring the Database
 Upload the included "memberBox_authLib.sql" file to your phpMyAdmin's "import" screen. This will have everything you need for Authentication. If you don't know how to import a database table file, you should Google that.
 
